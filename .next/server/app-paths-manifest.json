@@ -1,0 +1,10 @@
+{
+  "/api/galleries/route": "app/api/galleries/route.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/explore/page": "app/explore/page.js",
+  "/explore/roman-gallery/page": "app/explore/roman-gallery/page.js",
+  "/page": "app/page.js",
+  "/login/page": "app/login/page.js",
+  "/explore/egyptian-gallery/page": "app/explore/egyptian-gallery/page.js",
+  "/explore/gallery/[id]/page": "app/explore/gallery/[id]/page.js"
+}
