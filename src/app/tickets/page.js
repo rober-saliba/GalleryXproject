@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import Header from '../components/Header';
-import TicketPurchase from '../components/TicketPurchase';
+import Header from '../../components/shared/Header';
+import TicketPurchase from '../../components/ticket/TicketPurchase';
 
 export default function TicketsPage() {
   const [user, setUser] = useState(null);

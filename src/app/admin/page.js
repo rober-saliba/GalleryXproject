@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import StatsCard from '../components/admin/StatsCard';
+import StatsCard from '../../components/admin/StatsCard';
 
 export default function AdminDashboardPage() {
   const [visitorStats, setVisitorStats] = useState({

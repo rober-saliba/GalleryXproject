@@ -1,4 +1,4 @@
-// File: C:\projects\museum\museum\src\app\tickets\page.js
+// File: /Users/helalhammoud/Desktop/GalleryXproject-1/src/app/tickets/page.js
 import * as entry from '../../../../src/app/tickets/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

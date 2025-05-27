@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import Header from '../../components/Header';
-import RomanGallery from '../../components/RomanGallery';
+import Header from '../../../components/shared/Header';
+import RomanGallery from '../../../components/gallery/RomanGallery';
 import Link from 'next/link';
 
 export default function RomanGalleryPage() {

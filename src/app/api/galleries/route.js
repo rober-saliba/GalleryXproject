@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import clientPromise from '../../lib/mongodb';
+import clientPromise from '../../../lib/mongodb';
 
 // Helper to safely convert MongoDB ID to string
 function safeId(id) {

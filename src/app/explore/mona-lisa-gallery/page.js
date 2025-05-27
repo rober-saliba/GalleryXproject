@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import Header from '../../components/Header';
-import MonaLisaGallery from '../../components/MonaLisaGallery';
+import Header from '../../../components/shared/Header';
+import MonaLisaGallery from '../../../components/gallery/MonaLisaGallery';
 import Link from 'next/link';
 
 export default function MonaLisaGalleryPage() {

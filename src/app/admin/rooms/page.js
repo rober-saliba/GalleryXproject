@@ -1,8 +1,8 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import RoomTable from '../../components/admin/RoomTable';
-import Modal from '../../components/Modal';
+import RoomTable from '../../../components/admin/RoomTable';
+import Modal from '../../../components/shared/Modal';
 
 export default function ManageRoomsPage() {
   const [rooms, setRooms] = useState([]);

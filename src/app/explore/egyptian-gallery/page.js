@@ -2,67 +2,13 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import Header from '../../components/Header';
-import InteractiveGallery from '../../components/InteractiveGallery';
-import Modal from '../../components/Modal';
-import ArtifactDetail from '../../components/ArtifactDetail';
+import Header from '../../../components/shared/Header';
+import InteractiveGallery from '../../../components/gallery/InteractiveGallery';
+import Modal from '../../../components/shared/Modal';
+import ArtifactDetail from '../../../components/artifact/ArtifactDetail';
 import Link from 'next/link';
-
+import { EGYPTIAN_ARTIFACTS } from '@/data/artifacts';
 // Egyptian gallery artifacts data
-const EGYPTIAN_ARTIFACTS = [
-  {
-    _id: 'artifact-a1',
-    name: 'Ancient Clay Vessel',
-    description: 'This ancient clay vessel dates back to early Egyptian civilization, featuring distinctive carved hieroglyphics and symbols of Egyptian deities.',
-    imageUrl: '/images/placeholder.jpg',
-    artist: 'Unknown Ancient Egyptian Artisan',
-    createdYear: '3000 BCE',
-    additionalInfo: 'Clay vessels like this were used for storing grain, water, and other essentials in ancient Egypt. The hieroglyphics carved into it represent prayers to Egyptian gods for prosperity and protection.',
-    audioUrl: '/audio/placeholder.mp3',
-    gallery: 'ANCIENT EGYPTIAN GALLERY',
-    views: 215,
-    coords: { x: 40, y: 300, width: 75, height: 100 }
-  },
-  {
-    _id: 'artifact-a2',
-    name: 'Egyptian Ceramic Vase',
-    description: 'A beautifully preserved ceramic vase with intricate designs representing scenes from daily life in ancient Egypt.',
-    imageUrl: '/images/placeholder.jpg',
-    artist: 'Unknown Egyptian Artist',
-    createdYear: '1500 BCE',
-    additionalInfo: 'This type of pottery shows advanced firing techniques and artistic skills of ancient Egyptian craftspeople. The scenes depict the Nile River and agricultural activities that were central to Egyptian civilization.',
-    audioUrl: '/audio/placeholder.mp3',
-    gallery: 'ANCIENT EGYPTIAN GALLERY',
-    views: 187,
-    coords: { x: 180, y: 270, width: 120, height: 150 }
-  },
-  {
-    _id: 'artifact-a3',
-    name: 'Egyptian Ritual Figurine Group',
-    description: 'A ceremonial statue depicting Egyptian priests in a ritual scene, carved from limestone.',
-    imageUrl: '/images/placeholder.jpg',
-    artist: 'Unknown Ancient Egyptian Sculptor',
-    createdYear: '2000 BCE',
-    additionalInfo: 'This sculpture was used in religious ceremonies honoring the god Osiris. The figures represent priests performing sacred rituals to ensure safe passage to the afterlife.',
-    audioUrl: '/audio/placeholder.mp3',
-    gallery: 'ANCIENT EGYPTIAN GALLERY',
-    views: 275,
-    coords: { x: 320, y: 130, width: 180, height: 300 }
-  },
-  {
-    _id: 'artifact-a4',
-    name: 'Seated Pharaoh Figure',
-    description: 'A majestic statue of a seated Pharaoh, showcasing the power and divine authority of Egyptian rulers.',
-    imageUrl: '/images/placeholder.jpg',
-    artist: 'Royal Egyptian Court Sculptor',
-    createdYear: '1800 BCE',
-    additionalInfo: 'This type of royal portraiture was common in ancient Egypt, emphasizing the Pharaoh\'s role as both political leader and divine intermediary. The hieroglyphics on the base name the Pharaoh and list his accomplishments.',
-    audioUrl: '/audio/placeholder.mp3',
-    gallery: 'ANCIENT EGYPTIAN GALLERY',
-    views: 305,
-    coords: { x: 790, y: 100, width: 300, height: 380 }
-  }
-];
 
 export default function EgyptianGalleryPage() {
   const router = useRouter();

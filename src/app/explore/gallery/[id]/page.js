@@ -2,11 +2,11 @@
 
 import { useState, useEffect } from 'react';
 import { useParams, useRouter } from 'next/navigation';
-import Header from '../../../components/Header';
-import ArtifactCard from '../../../components/ArtifactCard';
-import ArtifactDetail from '../../../components/ArtifactDetail';
-import InteractiveGallery from '../../../components/InteractiveGallery';
-import Modal from '../../../components/Modal';
+import Header from '../../../../components/shared/Header';
+import ArtifactCard from '../../../../components/artifact/ArtifactCard';
+import ArtifactDetail from '../../../../components/artifact/ArtifactDetail';
+import InteractiveGallery from '@/components/gallery/InteractiveGallery';
+import Modal from '../../../../components/shared/Modal';
 import Link from 'next/link';
 
 // Hardcoded artifacts for each gallery to ensure they always display

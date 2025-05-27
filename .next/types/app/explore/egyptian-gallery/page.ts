@@ -1,4 +1,4 @@
-// File: C:\projects\museum\museum\src\app\explore\egyptian-gallery\page.js
+// File: /Users/helalhammoud/Desktop/GalleryXproject-1/src/app/explore/egyptian-gallery/page.js
 import * as entry from '../../../../../src/app/explore/egyptian-gallery/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

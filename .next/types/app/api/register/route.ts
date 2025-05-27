@@ -1,4 +1,4 @@
-// File: C:\projects\museum\museum\src\app\api\register\route.js
+// File: /Users/helalhammoud/Desktop/GalleryXproject-1/src/app/api/register/route.js
 import * as entry from '../../../../../src/app/api/register/route.js'
 import type { NextRequest } from 'next/server.js'
 

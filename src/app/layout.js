@@ -1,6 +1,7 @@
 import { Playfair_Display, Raleway } from "next/font/google";
-import "./globals.css";
-
+import "../styles/globals.css";
+import Header from "../components/shared/Header";
+import AnimatedBackdrop from "@/components/shared/AnimatedBackdrop";
 const playfair = Playfair_Display({
   subsets: ["latin"],
   display: "swap",
@@ -20,9 +21,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${playfair.variable} ${raleway.variable}`}>
-      <body className="min-h-screen bg-white text-black">
-        {children}
+    <html lang="en">
+      <body className="min-h-screen bg-gray-900 text-white overflow-x-hidden">
+        <main className="relative z-10">{children}</main>
       </body>
     </html>
   );

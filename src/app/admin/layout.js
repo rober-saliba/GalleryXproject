@@ -1,6 +1,6 @@
 'use client';
 
-import Sidebar from '../components/admin/Sidebar';
+import Sidebar from '../../components/admin/Sidebar';
 import { useState, useEffect } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 

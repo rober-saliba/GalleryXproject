@@ -1,8 +1,8 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import ArtifactTable from '../../components/admin/ArtifactTable';
-import Modal from '../../components/Modal';
+import ArtifactTable from '../../../components/admin/ArtifactTable';
+import Modal from '../../../components/shared/Modal';
 
 export default function ManageArtifactsPage() {
   const [artifacts, setArtifacts] = useState([]);
